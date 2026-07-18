@@ -1,6 +1,6 @@
 /*
     Processor Module.
-        -> Combines ALU, Control Unit and Registerfile together.
+        -> Combines ALU, Control Unit and Register bank together.
         -> Provides interconnections.
         -> Handles connections to outer modules
 */
@@ -45,7 +45,7 @@ module Processor16(
     // Drives Data_out
     assign Data_out = W_en ? A_bus : 16'b0;
 
-    // Sets Read enables as negetion of write enable.
+    // Sets Read enables as negation of write enable.
     // Read data when not writing Data
     assign R_en = ~W_en;
 

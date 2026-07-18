@@ -5,7 +5,7 @@
         -> Decodes Instruction.
         -> Sets respective control signals.
         
-        -> 2 stage piplined, Fetch and Execute.
+        -> 2 stage pipelined, Fetch and Execute.
         -> Stalls to avoid hazards.
 */
 

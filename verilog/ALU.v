@@ -6,7 +6,7 @@
         -> Can pass Values of Data Buses as it is.
         -> Uses operation signal from CU to decide operation.
         -> only one operation at a time.
-        -> Outputs comparision of boths inputs as cmp_out
+        -> Outputs comparison of both inputs as cmp_out
 */
 
 `timescale 1ps/1ps
