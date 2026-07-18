@@ -44,16 +44,17 @@ def parse_args() -> None:
         else:
             options.write = True
         options.output_file = args.output_file
-    if args.logisim:
-        options.filetype = "logisim"
+        
+    if args.mem:
+        options.filetype = "mem"
     elif args.hex:
         options.filetype = "hex"
-    elif args.mem:
-        options.filetype = "mem"
+    elif args.logisim:
+        options.filetype = "logisim"
     else:
-        options.filetype = "logisim"  # Default to logisim if no file type is specified
+        options.filetype = "mem"  # Default to mem if no file type is specified
     if (args.logisim + args.hex + args.mem) > 1:
-        print("Warning: Multiple file type options are specified. Only the Logisim format will be generated.")
+        print("Warning: Multiple file type options are specified. Only the mem format will be generated.")
     if args.print:
         options.print = True
 

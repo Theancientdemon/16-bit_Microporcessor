@@ -58,14 +58,13 @@ class FileAssembler:
             else:
                 index += 1
             newcode.append(word)
-        code = newcode
-        return code, Labels
+        return newcode, Labels
 
     @staticmethod
     def get_assembled_code(input_file: str) -> list[str|Label|Address|Location]:
         """Get the assembled code from the input file."""
-        with open(input_file, 'r') as infile:
-                lines = infile.readlines()
+        with open(input_file, 'r') as file:
+                lines = file.readlines()
             
         code = []
         for lineno,line in enumerate(lines, 1):

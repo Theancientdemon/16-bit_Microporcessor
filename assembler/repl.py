@@ -44,7 +44,7 @@ class REPL:
                 Errors.PrintError(e,exit=False)
     
     @staticmethod
-    def get_help(obj=None):
+    def get_help(obj:str | None = None):
         if obj is None:
             print("Usage: <HELP | ?> <COMMAND>")
             print("Prints the help for the specified command.")
