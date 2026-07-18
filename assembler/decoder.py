@@ -79,7 +79,7 @@ class Decoder:
         
         match instruction.upper():
             case x if x.startswith("%"):
-                raise None
+                return None
             case x if x.startswith("#") or x.endswith(":"):
                 return Label(instruction[1:] if instruction.startswith("#") else instruction[:-1])
             case x if x.startswith("$"):

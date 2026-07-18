@@ -1,7 +1,7 @@
 import sys
-from decoder_1601 import Decoder
-from tools1601 import Tools
-import errors1601 as Errors
+from decoder import Decoder
+from tools import Tools
+import errors as Errors
 
 class REPL:
     @staticmethod

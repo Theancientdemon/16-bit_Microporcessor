@@ -1,6 +1,6 @@
-from decoder_1601 import Decoder
-from tools1601 import Address, Label, Location, Options, Tools
-import errors1601 as Errors
+from decoder import Decoder
+from tools import Address, Label, Location, Options, Tools
+import errors as Errors
 
 class FileAssembler:
     @staticmethod

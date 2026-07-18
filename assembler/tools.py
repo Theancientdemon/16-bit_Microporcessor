@@ -1,4 +1,4 @@
-import errors1601 as Errors
+import errors as Errors
 import codecs
 
 class Tools:
